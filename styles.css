@@ -1,0 +1,168 @@
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    --basic-font-size: 18px;
+    --basic-border-radius: 25px;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    background-color: var(--pale-blue);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'HankenGrotesk';
+    font-weight: 500;
+}
+
+main {
+    width: 60vw;
+    height: 50vh;
+    background-color: var(--white);
+    display: flex;
+    border-radius: var(--basic-border-radius);
+    border: 0 solid;
+    box-shadow: 0 0 25px var(--light-lavender);
+}
+
+.result, .summary {
+    width: 24vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--basic-border-radius);
+    border: 0 solid;
+    padding: 0 3vw;
+}
+
+.result{
+    background-image: linear-gradient(10deg, var(--light-royal-blue), var(--light-slate-blue));
+    color: var(--white);
+    box-shadow: 1px 0 5px var(--dark-gray-blue);
+}
+
+.num {
+    height: 150px;
+    width: 145px;
+    background-image: linear-gradient(180deg, var(--violet-blue), var(--persian-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100vw;
+}
+
+p {
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.629);
+}
+
+h3 {
+    font-size: 20px;
+    margin: 25px;
+    color: hsla(0, 0%, 100%, 0.629);
+}
+
+.summary {
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 20px;
+    align-self: flex-start;
+    margin: 25px 0;
+    color: var(--dark-gray-blue);
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 24vw;
+    height: 5vh;
+    text-align:start;
+    border-radius: 10px;
+}
+
+img {
+    margin: 0 10px;
+}
+
+.text-des {
+    margin-right: auto;
+}
+
+.num-des {
+    color: var(--dark-gray-blue);
+    margin-right: 10px;
+}
+
+.reaction {
+    background-color: rgba(255, 152, 152, 0.097);
+}
+
+.memory {
+    background-color: rgba(250, 252, 136, 0.258);
+}
+
+.verbal {
+    background-color: rgba(152, 255, 152, 0.164);
+}
+
+.visual {
+    background-color: rgba(154, 152, 255, 0.066);
+}
+
+.continue {
+    width: 24vw;
+    height: 5vh;
+    margin-bottom: 30px;
+    border-radius: var(--basic-border-radius);
+    border: 0 solid #ffffff;
+    background-image: linear-gradient(10deg, var(--light-royal-blue), var(--light-slate-blue));
+    font-family: 'HankenGrotesk';
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: 0.6px;
+}
+
+.continue:hover {
+    background-image: linear-gradient(180deg, rgb(67, 46, 223), rgb(67, 46, 223));
+}
